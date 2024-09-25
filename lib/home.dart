@@ -26,24 +26,26 @@ class _AdminHomeScreenState extends State<AdminHomeScreen> {
         users = jsonDecode(response.body);
       });
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to load users')));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('Failed to load users')));
     }
   }
 
   void _navigateToAddUserScreen() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => AddUserScreen()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => AddUserScreen()));
   }
 
   void _navigateToProfileScreen() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => ProfileScreen()));
   }
 
   void _logout() {
-    // Add your logout logic here, e.g., clearing tokens or session
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => LoginScreen()), // Replace with your login screen
-      (Route<dynamic> route) => false, // Ensures no back button to home screen
+      MaterialPageRoute(builder: (context) => LoginScreen()),
+      (Route<dynamic> route) => false,
     );
   }
 
@@ -107,20 +109,21 @@ class _ViewerHomeScreenState extends State<ViewerHomeScreen> {
         users = jsonDecode(response.body);
       });
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to load users')));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('Failed to load users')));
     }
   }
 
   void _navigateToProfileScreen() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => ProfileScreen()));
   }
 
   void _logout() {
-    // Add your logout logic here, e.g., clearing tokens or session
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => LoginScreen()), // Replace with your login screen
-      (Route<dynamic> route) => false, // Ensures no back button to home screen
+      MaterialPageRoute(builder: (context) => LoginScreen()),
+      (Route<dynamic> route) => false,
     );
   }
 

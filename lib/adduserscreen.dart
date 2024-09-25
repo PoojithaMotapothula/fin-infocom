@@ -11,8 +11,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  String _selectedRole = 'user'; // Default role
-
+  String _selectedRole = 'user'; 
   Future<void> addUser() async {
     final response = await http.post(
       Uri.parse('http://10.0.2.2:3000/add-user'),
@@ -27,7 +26,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
 
     if (response.statusCode == 200) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('User added successfully')));
-      Navigator.pop(context);  // Go back to previous screen
+      Navigator.pop(context);  
     } else {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Failed to add user')));
     }
