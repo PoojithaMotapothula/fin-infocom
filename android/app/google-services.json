@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "117528305984",
+    "project_id": "fininfotech-66a30",
+    "storage_bucket": "fininfotech-66a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117528305984:android:6e24414194c300651e1aa5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firestore_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6nZ9alq6-cJ97Eocp_JkyDIKIkAiHcL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117528305984:android:4ec928f9131233fa1e1aa5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firestore_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6nZ9alq6-cJ97Eocp_JkyDIKIkAiHcL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
